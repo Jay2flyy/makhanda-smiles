@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Star, Quote, Calendar, Heart } from 'lucide-react';
+import { Star, Quote, Heart } from 'lucide-react';
 import { BeforeAfterSlider, BeforeAfterComparison } from '../components/BeforeAfterSlider';
 import { CTASection } from '../components/CTASection';
 import { AnimatedText } from '../components/AnimatedText';

@@ -1,7 +1,7 @@
 import emailjs from '@emailjs/browser';
 
 // Initialize EmailJS
-emailjs.init('service_yawbxfr');
+// emailjs.init('rVw6zTainbp77juNc');
 
 export type EmailTemplateType = 
   | 'appointment_confirmation' 

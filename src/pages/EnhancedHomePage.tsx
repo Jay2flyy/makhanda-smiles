@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Calendar, Shield, Clock, Award, Star, CheckCircle, Play, ArrowRight } from 'lucide-react';
+import { Calendar, Shield, Clock, Award, Star, CheckCircle, ArrowRight } from 'lucide-react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
@@ -11,7 +11,6 @@ import { useInView } from '../hooks/useInView';
 const EnhancedHomePage = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   const { scrollY } = useScroll();
-  const heroY = useTransform(scrollY, [0, 500], [0, 150]);
   const heroOpacity = useTransform(scrollY, [0, 300], [1, 0]);
 
   const features = [

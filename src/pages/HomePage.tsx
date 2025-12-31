@@ -9,7 +9,6 @@ const HomePage = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   const { scrollY } = useScroll();
   const heroOpacity = useTransform(scrollY, [0, 300], [1, 0]);
-  const heroScale = useTransform(scrollY, [0, 300], [1, 0.95]);
   
   const features = [
     {
