@@ -51,11 +51,11 @@ const AdminDashboard = () => {
       const thisMonth = new Date().toISOString().slice(0, 7);
 
       const appointmentsToday = (appointmentsData || []).filter(
-        (a) => a.appointment_date === today
+        (a: any) => a.appointment_date === today
       ).length;
 
       const pendingAppointments = (appointmentsData || []).filter(
-        (a) => a.status === 'pending'
+        (a: any) => a.status === 'pending'
       ).length;
 
       // Fetch patients count
